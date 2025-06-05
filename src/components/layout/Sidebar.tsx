@@ -4,7 +4,7 @@ import Icon from "@/components/ui/Icon";
 
 export default function Sidebar() {
   return (
-    <div className="h-full px-4 pb-6 flex flex-col justify-between border-r border-neutral-200">
+    <div className="h-full px-4.5 pb-6 flex flex-col justify-between border-r border-neutral-200">
       <div className="flex flex-col">
         <div className="mt-3 py-1.5 flex justify-between text-base font-medium">
           Chat

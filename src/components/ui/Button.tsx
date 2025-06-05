@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary: 'bg-slate-800 text-white border border-gray-500 shadow-md',
-  secondary: 'bg-white border border-gray-200 shadow-md shadow-gray-300',
+  secondary: 'bg-white border border-gray-200 shadow-md shadow-gray-200',
 }
 
 export default function Button({children, className, variant}: ButtonProps) {
@@ -18,7 +18,7 @@ export default function Button({children, className, variant}: ButtonProps) {
     <button className={clsx(
       className,
       variant ? variantClasses[variant] : variantClasses.primary,
-      "py-1.5 px-3 inline-flex gap-1.5 items-center rounded-full cursor-pointer"
+      "py-1 px-3 inline-flex gap-1.5 items-center rounded-full cursor-pointer"
     )}>
       {children}
     </button>

@@ -10,8 +10,8 @@ interface AvatarProps {
 
 const sizeClasses: Record<ButtonSize, string> = {
   sm: 'w-6',
-  md: 'w-8',
-  lg: 'w-10'
+  md: 'w-10',
+  lg: 'w-13'
 }
 
 export default function Avatar({ src = 'https://gravatar.com/avatar/27c8b57f3aa9c36e4e96a721e5d13a36?s=400&d=retro&r=r', size, className}: AvatarProps) {

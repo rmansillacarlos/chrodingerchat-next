@@ -28,7 +28,7 @@ export default function RootLayout({
           {/* Navbar */}
           <Navbar />
           {/* Sidebar */}
-          <div className="w-[210px]">
+          <div className="w-[230px]">
             <Sidebar />
           </div>
           {/* Content */}

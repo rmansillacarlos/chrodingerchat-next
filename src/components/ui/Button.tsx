@@ -16,7 +16,7 @@ const variantClasses: Record<ButtonVariant, string> = {
 export default function Button({children, className, variant}: ButtonProps) {
   return (
     <button className={clsx(
-      "py-1.5 px-3 inline-flex gap-1 items-center rounded-full cursor-pointer",
+      "py-1.5 px-3 inline-flex gap-1.5 items-center rounded-full cursor-pointer",
       variant ? variantClasses[variant] : variantClasses.primary,
       className
     )}>

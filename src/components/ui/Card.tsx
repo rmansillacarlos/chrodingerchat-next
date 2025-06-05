@@ -9,8 +9,8 @@ interface CardProps {
 }
 
 const variantClasses: Record<CardVariant, string> = {
-  primary: 'bg-slate-900 text-white',
-  secondary: 'bg-white border border-gray-300'
+  primary: 'bg-slate-900 text-white hover:bg-slate-800 active:outline-3 active:outline-slate-400',
+  secondary: 'bg-white border border-gray-300 hover:bg-gray-100 active:outline-3 active:outline-slate-400'
 }
 
 export default function Card({ children, className, variant }: CardProps) {

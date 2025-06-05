@@ -9,8 +9,8 @@ interface ButtonProps {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: 'bg-slate-800 text-white border border-gray-500 shadow-md',
-  secondary: 'bg-white border border-gray-200 shadow-md shadow-gray-200',
+  primary: 'bg-slate-800 text-white border border-gray-500 shadow-md hover:bg-slate-600 active:outline-2 active:outline-slate-400',
+  secondary: 'bg-white border border-gray-200 shadow-md shadow-gray-200 hover:bg-gray-100 active:outline-2 active:outline-slate-400',
 }
 
 export default function Button({children, className, variant}: ButtonProps) {

@@ -3,8 +3,8 @@ import clsx from "clsx"
 type NavbarItemVariant = 'primary' | 'secondary'
 
 const variantClasses: Record<NavbarItemVariant, string> = {
-  primary: 'bg-slate-800 text-white',
-  secondary: 'bg-white',
+  primary: 'bg-slate-800 text-white hover:bg-slate-600 active:outline-2 active:outline-slate-400',
+  secondary: 'bg-white hover:bg-gray-200 active:outline-2 active:outline-slate-400',
 }
 
 interface NavbarItemProps {

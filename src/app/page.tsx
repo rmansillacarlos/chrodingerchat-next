@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
       <div className="p-2.5 h-[calc(100vh-36px-4rem)] flex flex-col justify-between bg-stone-100 rounded-2xl md:p-4">
         <div className="mb-4 mx-auto flex flex-col flex-1 justify-center gap-4 md:max-w-[768px]">
-          <div className="mx-auto flex flex-col gap-2 justify-center items-center pb-20 text-center">
+          <div className="mx-auto flex flex-col gap-2 justify-center items-center pb-14 text-center">
             <Avatar src="https://gravatar.com/avatar/6717be7d9ec2673e848f24b7979555a1?s=200&d=retro&r=x" size="lg" className="mb-2" />
             <h1 className="text-2xl font-bold">Hi, there</h1>
             <p>

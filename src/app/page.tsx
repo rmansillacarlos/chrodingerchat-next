@@ -7,9 +7,9 @@ import PropmtInput from '@/components/ui/PropmtInput'
 
 export default function Home() {
   return (
-    <div className='max-w-5xl'>
+    <>
       <Header />
-      <div className="mb-4 py-4 px-28 h-[calc(100vh-36px-4rem)] flex flex-col justify-between bg-stone-100 rounded-2xl">
+      <div className="mb-4 p-2.5 h-[calc(100vh-36px-4rem)] flex flex-col justify-between bg-stone-100 rounded-2xl md:p-4">
         <div className="mb-4 flex flex-col flex-1 justify-center gap-4">
           <div className="mx-auto flex flex-col gap-2 justify-center items-center pb-20 text-center">
             <Avatar src="https://gravatar.com/avatar/6717be7d9ec2673e848f24b7979555a1?s=200&d=retro&r=x" size="lg" className="mb-2" />
@@ -18,7 +18,7 @@ export default function Home() {
               Next.js is a top front-end framework wich is most preferred by companies.
             </p>
           </div>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col gap-4 lg:flex-row">
             <Card variant="primary">
               <div className="flex flex-col justify-between">
                 <div className="mb-3 flex justify-between items-center">
@@ -41,7 +41,7 @@ export default function Home() {
               </div>
             </Card>
           </div>
-          <div className="flex gap-4 justify-center">
+          <div className="hidden gap-4 justify-center lg:flex">
             <Button variant="secondary">
               Connect Calendar
             </Button>
@@ -59,9 +59,9 @@ export default function Home() {
         {/* prompt input */}
         <div className="mb-4">
           <PropmtInput />
-          <p className="mt-4 text-center text-sm text-gray-500">Anim consectetur elit laboris ullamco mollit minim id proident <a href="" className='text-black underline'>dolore commodo et.</a></p>  
+          <p className="mt-6 text-center text-sm text-gray-500">Anim consectetur elit laboris ullamco mollit minim id proident <a href="" className='text-black underline'>dolore commodo et.</a></p>  
         </div>
       </div>
-    </div>
+    </>
   )
 }

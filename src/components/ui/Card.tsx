@@ -16,7 +16,7 @@ const variantClasses: Record<CardVariant, string> = {
 export default function Card({ children, className, variant }: CardProps) {
   return (
     <div className={clsx(
-      "w-full p-4 text-sm rounded-2xl cursor-pointer",
+      "flex-1 p-4 text-sm rounded-2xl cursor-pointer",
       variant ? variantClasses[variant] : variantClasses.secondary,
       className
     )}>

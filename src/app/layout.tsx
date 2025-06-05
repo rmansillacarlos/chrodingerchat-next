@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import Navbar from "@/components/layout/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -25,19 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={geistSans.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col`}
+        className={`light antialiased h-screen flex flex-col`}
       >
         <div className="p-3 mx-auto flex flex-raw h-full">
           {/* Navbar */}
           <Navbar />
           {/* Sidebar */}
-          <div className="w-[196px]">
+          <div className="w-[210px]">
             <Sidebar />
           </div>
           {/* Content */}
-          <div className="h-full p-4 flex flex-col">
+          <div className="h-full p-4.5 flex flex-col">
             {children}
           </div>
         </div>

@@ -9,8 +9,8 @@ export default function Navbar() {
   const { toggleTheme } = useTheme()
 
   return (
-    <>
-      <div className="hidden flex-col justify-between items-center p-2 bg-stone-100 rounded-s-xl lg:flex">
+    <aside className="hidden p-2 lg:flex">
+      <div className="h-full flex-col justify-between items-center p-2 bg-stone-100 rounded-s-xl">
         <div className="flex flex-col justify-center items-center gap-3 w-auto">
           <Avatar className="mb-2" size="md" src="https://gravatar.com/avatar/6717be7d9ec2673e848f24b7979555a1?s=200&d=retro&r=x" />
 
@@ -36,6 +36,6 @@ export default function Navbar() {
           </div>
         </NavbarItem>
       </div>
-    </>
+    </aside>
   )
 }

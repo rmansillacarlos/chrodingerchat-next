@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={geistSans.className}>
       <body className={`light antialiased h-screen flex flex-col`}>
-        <div className="flex flex-raw justify-center h-full lg:p-3">
+        <div className="flex flex-raw justify-center h-full lg:p-3s">
           {/* Navbar */}
           <Navbar />
           {/* Sidebar */}

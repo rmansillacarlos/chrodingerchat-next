@@ -4,7 +4,7 @@ import Icon from "@/components/ui/Icon";
 export default function Header() {
   return (
     <>
-      <div className="mb-3 flex justify-between items-center md:mb-4">
+      <div className="mb-4 h-10 flex justify-between items-center">
         {/* Logo */}
         <div className="inline-flex">
           <Icon className="block mr-4 lg:hidden" icon="heroicons:bars-3" size="24px" />

@@ -16,7 +16,7 @@ const AssistantMessage = ({ content }: { content: string }) => (
 
 export default function Body({ messages }: Props) {
   return (
-    <div className="flex flex-col space-y-2">
+    <div className="mx-auto max-w-4xl flex flex-col space-y-3">
       { messages.map(({ id, content, role }) => 
         role === "assistant" ? (
           <AssistantMessage key={id} content={content} />

@@ -57,7 +57,7 @@ export default function Chat() {
     <>
       <div
         ref={containerRef}
-        className="mb-4 p-4 h-[calc(100vh-36px-4rem)]s overflow-y-auto flex flex-col justify-between bg-stone-100 rounded-2xl md:p-6"
+        className="mb-4 p-4 h-[calc(100vh-36px-4rem)] overflow-y-auto flex flex-col justify-between bg-stone-100 rounded-2xl md:p-6"
       >
         { messages.length > 0 
           ? <Conversation messages={messages} />
